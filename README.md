@@ -1,7 +1,7 @@
 # BW16_RTL8720
 Instructions on how to interface with the B&amp;T/BW16-RTL8720 rtlduino demo board
 
-buntu:
+ubuntu:
 sudo apt-get update
 sudo apt-get install libc6-i386
 sudo apt-get install libncurses5-dev
@@ -36,6 +36,7 @@ connect to serial using BAUD 115200 (this SHOULD be the port to flash against)
 
 if plugged into the USB on the board, serial must be BAUD 38400
 This is an interface to command AT only 
+When sending AT commands, send each instruction with \r\n on the end (this is usually a setting in serial software)
 
 once plugged in and listening to either serial port at the correct baud rate, press reset button on board to see output
 
