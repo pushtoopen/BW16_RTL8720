@@ -41,8 +41,28 @@ When sending AT commands, send each instruction with \r\n on the end (this is us
 once plugged in and listening to either serial port at the correct baud rate, press reset button on board to see output
 
 
+"AT commands" are a format of https://en.wikipedia.org/wiki/Hayes_command_set
 
+every processor is different, so that will only give you a limited understanding of the commands.
 
+Finding the list of "AT" commands is becoming difficult. This may be unnecessary if you flash this processor with 
+https://github.com/ambiot/amazon-freertos
+
+This lists that amebaz2 is supported for this and the below link describes the rtl8720 as an ameba z2.
+
+https://www.cnx-software.com/2019/07/16/ameba-z2-iot-board-realtek-rtl8720cm-armv8-m-km4-secure-wireless-mcu/ 
+
+only issue is that this module is a B&T BW16, not necessarily an "amebaz2"
+
+So i'm still trying to figure all this out. Please feel free to let me know if you have any more info on this.
+
+This is a different board with this chip on it:
+https://www.mikroe.com/wifi-11-click
+
+It seems to have a bunch more funcitonality and support. I have yet to dig through it.
+
+This comes up when i google "BW16 AT Commands" but i additionally havent dug through it yet:
+https://files.seeedstudio.com/wiki/Air602_WiFi_Module/res/Air602%20AT%20Command%20User%20Manual.pdf
 
 
 from the "RTLDUINO" board maker
