@@ -8,8 +8,7 @@ https://www.cygwin.com/setup-x86.exe
 During install for cygwin, select "make" and "bc" nad "git" packages
 
 Note: I've already tried their linux build process with both a segger JTAG and just a USB->UART and it does not work immediately
-
-inside the cygwin. git clone git@github.com:ambiot/ambd_sdk.git
+Open cygwin AS ADMINISTRATOR. then execute: git clone git@github.com:ambiot/ambd_sdk.git
 
 navigate to $clone_loc/ambd_sdk/project/
 execute: find -type f -name "*.sh" -exec chmod 0755 {} \;
