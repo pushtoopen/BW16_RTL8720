@@ -11,7 +11,7 @@ Note: I've already tried their linux build process with both a segger JTAG and j
 Open cygwin AS ADMINISTRATOR. then execute: git clone git@github.com:ambiot/ambd_sdk.git
 
 navigate to $clone_loc/ambd_sdk/project/
-execute: find -type f -name "*.sh" -exec chmod 0755 {} \;
+execute: find -type f -name "*.sh" -exec chmod 0755 {} \\;
 
 navigate to $clone_loc/ambd_sdk/project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/
 execute: make all
