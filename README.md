@@ -5,10 +5,14 @@ Here is the toolchain: https://github.com/ambiot/ambd_sdk
 this toolchain uses mbed OS on top of FREERTOS
 Windows toolchain (with 32 bit cygwin only????) seems to be the only one that allows for flashing.
 https://www.cygwin.com/setup-x86.exe
-During install for cygwin, select "make" and "bc" packages
-I've already tried their linux build process with both a segger JTAG and just a USB->UART and it does not work immediately
+During install for cygwin, select "make" and "bc" nad "git" packages
+
+Note: I've already tried their linux build process with both a segger JTAG and just a USB->UART and it does not work immediately
 
 inside the cygwin. git clone git@github.com:ambiot/ambd_sdk.git
+
+navigate to $clone_loc/ambd_sdk/project/
+execute: find -type f -name "*.sh" -exec chmod 0755 {} \;
 
 navigate to $clone_loc/ambd_sdk/project/realtek_amebaD_va0_example/GCC-RELEASE/project_lp/
 execute: make all
